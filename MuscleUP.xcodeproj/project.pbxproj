@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043B849C2A9E24BA0093C028 /* ProfileSetUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B849B2A9E24BA0093C028 /* ProfileSetUpViewModel.swift */; };
+		043B849E2A9E58A50093C028 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B849D2A9E58A50093C028 /* Router.swift */; };
+		043B84A02A9E73460093C028 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B849F2A9E73460093C028 /* CustomTabBarView.swift */; };
+		043B84A32A9E7A410093C028 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84A22A9E7A410093C028 /* BaseView.swift */; };
+		043B84A52A9F2C2D0093C028 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84A42A9F2C2D0093C028 /* CardView.swift */; };
+		043B84A72A9F2EA10093C028 /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84A62A9F2EA10093C028 /* SectionTitleView.swift */; };
+		043B84A92A9F4F510093C028 /* CustomSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84A82A9F4F510093C028 /* CustomSegmentedControlView.swift */; };
+		043B84AB2A9F92D60093C028 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84AA2A9F92D60093C028 /* HomeViewModel.swift */; };
+		043B84AD2A9F93930093C028 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84AC2A9F93930093C028 /* Segment.swift */; };
+		043B84B62A9FAEC40093C028 /* InsigthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84B52A9FAEC40093C028 /* InsigthsView.swift */; };
+		04FB64772A9B580400D0E365 /* MuscleUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64762A9B580400D0E365 /* MuscleUPApp.swift */; };
+		04FB64792A9B580400D0E365 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64782A9B580400D0E365 /* ContentView.swift */; };
+		04FB647B2A9B580600D0E365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FB647A2A9B580600D0E365 /* Assets.xcassets */; };
+		04FB647E2A9B580600D0E365 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FB647D2A9B580600D0E365 /* Preview Assets.xcassets */; };
+		04FB64882A9B580600D0E365 /* MuscleUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64872A9B580600D0E365 /* MuscleUPTests.swift */; };
+		04FB64922A9B580600D0E365 /* MuscleUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64912A9B580600D0E365 /* MuscleUPUITests.swift */; };
+		04FB64942A9B580600D0E365 /* MuscleUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64932A9B580600D0E365 /* MuscleUPUITestsLaunchTests.swift */; };
+		04FB64AA2A9B5C5700D0E365 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64A92A9B5C5600D0E365 /* OnboardingView.swift */; };
+		04FB64AD2A9B5D0000D0E365 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64AC2A9B5D0000D0E365 /* OnboardingModel.swift */; };
+		04FB64BB2A9B711300D0E365 /* IntegralCF-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64AF2A9B711200D0E365 /* IntegralCF-Heavy.otf */; };
+		04FB64BC2A9B711300D0E365 /* IntegralCF-HeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B02A9B711300D0E365 /* IntegralCF-HeavyOblique.otf */; };
+		04FB64BD2A9B711300D0E365 /* IntegralCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B12A9B711300D0E365 /* IntegralCF-Medium.otf */; };
+		04FB64BE2A9B711300D0E365 /* IntegralCF-MediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B22A9B711300D0E365 /* IntegralCF-MediumOblique.otf */; };
+		04FB64BF2A9B711300D0E365 /* IntegralCF-RegularOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B32A9B711300D0E365 /* IntegralCF-RegularOblique.otf */; };
+		04FB64C02A9B711300D0E365 /* IntegralCF-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B42A9B711300D0E365 /* IntegralCF-ExtraBold.otf */; };
+		04FB64C12A9B711300D0E365 /* IntegralCF-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B52A9B711300D0E365 /* IntegralCF-Regular.otf */; };
+		04FB64C22A9B711300D0E365 /* IntegralCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B62A9B711300D0E365 /* IntegralCF-Bold.otf */; };
+		04FB64C32A9B711300D0E365 /* IntegralCF-BoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B72A9B711300D0E365 /* IntegralCF-BoldOblique.otf */; };
+		04FB64C42A9B711300D0E365 /* IntegralCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B82A9B711300D0E365 /* IntegralCF-DemiBold.otf */; };
+		04FB64C52A9B711300D0E365 /* IntegralCF-ExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64B92A9B711300D0E365 /* IntegralCF-ExtraBoldOblique.otf */; };
+		04FB64C62A9B711300D0E365 /* IntegralCF-DemiBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04FB64BA2A9B711300D0E365 /* IntegralCF-DemiBoldOblique.otf */; };
+		04FB64C92A9B864B00D0E365 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64C82A9B864B00D0E365 /* CustomColors.swift */; };
+		04FB64CB2A9B8FF000D0E365 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64CA2A9B8FF000D0E365 /* CustomButton.swift */; };
+		04FB64CD2A9B902900D0E365 /* ProfileSetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64CC2A9B902900D0E365 /* ProfileSetUpView.swift */; };
+		04FB64D52A9BE47D00D0E365 /* HeigthSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64D42A9BE47D00D0E365 /* HeigthSelectionView.swift */; };
+		04FB64D72A9BE48E00D0E365 /* OldSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64D62A9BE48E00D0E365 /* OldSelectionView.swift */; };
+		04FB64D92A9BF0C400D0E365 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64D82A9BF0C400D0E365 /* GenderSelectionView.swift */; };
+		04FB64DB2A9BF7EE00D0E365 /* WeigthSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64DA2A9BF7EE00D0E365 /* WeigthSelectionView.swift */; };
+		04FB64DE2A9CAC8600D0E365 /* ActivitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64DD2A9CAC2E00D0E365 /* ActivitySelectionView.swift */; };
+		04FB64DF2A9CAC8900D0E365 /* GoalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64DC2A9CAC2C00D0E365 /* GoalSelectionView.swift */; };
+		04FB64E12A9D161800D0E365 /* ProfileBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64E02A9D161800D0E365 /* ProfileBaseView.swift */; };
+		04FB64E32A9D212800D0E365 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64E22A9D212800D0E365 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FB64842A9B580600D0E365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FB646B2A9B580400D0E365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FB64722A9B580400D0E365;
+			remoteInfo = muscleup;
+		};
+		04FB648E2A9B580600D0E365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FB646B2A9B580400D0E365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FB64722A9B580400D0E365;
+			remoteInfo = muscleup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043B849B2A9E24BA0093C028 /* ProfileSetUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetUpViewModel.swift; sourceTree = "<group>"; };
+		043B849D2A9E58A50093C028 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		043B849F2A9E73460093C028 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		043B84A22A9E7A410093C028 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		043B84A42A9F2C2D0093C028 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		043B84A62A9F2EA10093C028 /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
+		043B84A82A9F4F510093C028 /* CustomSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControlView.swift; sourceTree = "<group>"; };
+		043B84AA2A9F92D60093C028 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		043B84AC2A9F93930093C028 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		043B84B52A9FAEC40093C028 /* InsigthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsigthsView.swift; sourceTree = "<group>"; };
+		04FB64732A9B580400D0E365 /* MuscleUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FB64762A9B580400D0E365 /* MuscleUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleUPApp.swift; sourceTree = "<group>"; };
+		04FB64782A9B580400D0E365 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04FB647A2A9B580600D0E365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FB647D2A9B580600D0E365 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FB64832A9B580600D0E365 /* MuscleUPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuscleUPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FB64872A9B580600D0E365 /* MuscleUPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleUPTests.swift; sourceTree = "<group>"; };
+		04FB648D2A9B580600D0E365 /* MuscleUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuscleUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FB64912A9B580600D0E365 /* MuscleUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleUPUITests.swift; sourceTree = "<group>"; };
+		04FB64932A9B580600D0E365 /* MuscleUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04FB64A92A9B5C5600D0E365 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		04FB64AC2A9B5D0000D0E365 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		04FB64AF2A9B711200D0E365 /* IntegralCF-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Heavy.otf"; sourceTree = "<group>"; };
+		04FB64B02A9B711300D0E365 /* IntegralCF-HeavyOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-HeavyOblique.otf"; sourceTree = "<group>"; };
+		04FB64B12A9B711300D0E365 /* IntegralCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Medium.otf"; sourceTree = "<group>"; };
+		04FB64B22A9B711300D0E365 /* IntegralCF-MediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-MediumOblique.otf"; sourceTree = "<group>"; };
+		04FB64B32A9B711300D0E365 /* IntegralCF-RegularOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-RegularOblique.otf"; sourceTree = "<group>"; };
+		04FB64B42A9B711300D0E365 /* IntegralCF-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-ExtraBold.otf"; sourceTree = "<group>"; };
+		04FB64B52A9B711300D0E365 /* IntegralCF-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Regular.otf"; sourceTree = "<group>"; };
+		04FB64B62A9B711300D0E365 /* IntegralCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Bold.otf"; sourceTree = "<group>"; };
+		04FB64B72A9B711300D0E365 /* IntegralCF-BoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-BoldOblique.otf"; sourceTree = "<group>"; };
+		04FB64B82A9B711300D0E365 /* IntegralCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-DemiBold.otf"; sourceTree = "<group>"; };
+		04FB64B92A9B711300D0E365 /* IntegralCF-ExtraBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-ExtraBoldOblique.otf"; sourceTree = "<group>"; };
+		04FB64BA2A9B711300D0E365 /* IntegralCF-DemiBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-DemiBoldOblique.otf"; sourceTree = "<group>"; };
+		04FB64C72A9B716C00D0E365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04FB64C82A9B864B00D0E365 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		04FB64CA2A9B8FF000D0E365 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		04FB64CC2A9B902900D0E365 /* ProfileSetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetUpView.swift; sourceTree = "<group>"; };
+		04FB64D42A9BE47D00D0E365 /* HeigthSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeigthSelectionView.swift; sourceTree = "<group>"; };
+		04FB64D62A9BE48E00D0E365 /* OldSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSelectionView.swift; sourceTree = "<group>"; };
+		04FB64D82A9BF0C400D0E365 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		04FB64DA2A9BF7EE00D0E365 /* WeigthSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeigthSelectionView.swift; sourceTree = "<group>"; };
+		04FB64DC2A9CAC2C00D0E365 /* GoalSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectionView.swift; sourceTree = "<group>"; };
+		04FB64DD2A9CAC2E00D0E365 /* ActivitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectionView.swift; sourceTree = "<group>"; };
+		04FB64E02A9D161800D0E365 /* ProfileBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBaseView.swift; sourceTree = "<group>"; };
+		04FB64E22A9D212800D0E365 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FB64702A9B580400D0E365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB64802A9B580600D0E365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB648A2A9B580600D0E365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043B84A12A9E7A210093C028 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				043B84A22A9E7A410093C028 /* BaseView.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		043B84AE2A9FAD340093C028 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				043B849F2A9E73460093C028 /* CustomTabBarView.swift */,
+				043B84A82A9F4F510093C028 /* CustomSegmentedControlView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		043B84AF2A9FAD880093C028 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				043B84A42A9F2C2D0093C028 /* CardView.swift */,
+				043B84A62A9F2EA10093C028 /* SectionTitleView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		043B84B02A9FAD9F0093C028 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				043B84AC2A9F93930093C028 /* Segment.swift */,
+				043B84AA2A9F92D60093C028 /* HomeViewModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		043B84B12A9FADCB0093C028 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				043B84B22A9FAE280093C028 /* base */,
+				04FB64D32A9BE2DB00D0E365 /* activitySelection */,
+				04FB64D22A9BE2C900D0E365 /* goalSelection */,
+				04FB64D12A9BE29700D0E365 /* oldSelection */,
+				04FB64D02A9BE28500D0E365 /* weigthSelection */,
+				04FB64CF2A9BE26F00D0E365 /* heigthSelection */,
+				04FB64CE2A9BE25300D0E365 /* genderSelection */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		043B84B22A9FAE280093C028 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64E02A9D161800D0E365 /* ProfileBaseView.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		043B84B32A9FAE380093C028 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				043B849B2A9E24BA0093C028 /* ProfileSetUpViewModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		043B84B42A9FAEA60093C028 /* insights */ = {
+			isa = PBXGroup;
+			children = (
+				043B84B52A9FAEC40093C028 /* InsigthsView.swift */,
+			);
+			path = insights;
+			sourceTree = "<group>";
+		};
+		04FB646A2A9B580400D0E365 = {
+			isa = PBXGroup;
+			children = (
+				04FB64752A9B580400D0E365 /* MuscleUP */,
+				04FB64862A9B580600D0E365 /* MuscleUPTests */,
+				04FB64902A9B580600D0E365 /* MuscleUPUITests */,
+				04FB64742A9B580400D0E365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FB64742A9B580400D0E365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64732A9B580400D0E365 /* MuscleUP.app */,
+				04FB64832A9B580600D0E365 /* MuscleUPTests.xctest */,
+				04FB648D2A9B580600D0E365 /* MuscleUPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FB64752A9B580400D0E365 /* MuscleUP */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64C72A9B716C00D0E365 /* Info.plist */,
+				04FB64AB2A9B5CA100D0E365 /* common */,
+				04FB64A62A9B5B7600D0E365 /* data */,
+				04FB64A52A9B5B6C00D0E365 /* domain */,
+				04FB64A42A9B5B1800D0E365 /* presentation */,
+				04FB647A2A9B580600D0E365 /* Assets.xcassets */,
+				04FB647C2A9B580600D0E365 /* Preview Content */,
+			);
+			path = MuscleUP;
+			sourceTree = "<group>";
+		};
+		04FB647C2A9B580600D0E365 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04FB647D2A9B580600D0E365 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04FB64862A9B580600D0E365 /* MuscleUPTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64872A9B580600D0E365 /* MuscleUPTests.swift */,
+			);
+			path = MuscleUPTests;
+			sourceTree = "<group>";
+		};
+		04FB64902A9B580600D0E365 /* MuscleUPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64912A9B580600D0E365 /* MuscleUPUITests.swift */,
+				04FB64932A9B580600D0E365 /* MuscleUPUITestsLaunchTests.swift */,
+			);
+			path = MuscleUPUITests;
+			sourceTree = "<group>";
+		};
+		04FB64A02A9B5AC800D0E365 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64A92A9B5C5600D0E365 /* OnboardingView.swift */,
+				04FB64AC2A9B5D0000D0E365 /* OnboardingModel.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		04FB64A12A9B5AE000D0E365 /* profileSetUp */ = {
+			isa = PBXGroup;
+			children = (
+				043B84B32A9FAE380093C028 /* models */,
+				043B84B12A9FADCB0093C028 /* views */,
+				04FB64CC2A9B902900D0E365 /* ProfileSetUpView.swift */,
+			);
+			path = profileSetUp;
+			sourceTree = "<group>";
+		};
+		04FB64A22A9B5B0100D0E365 /* login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		04FB64A32A9B5B1200D0E365 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				043B84B02A9FAD9F0093C028 /* models */,
+				043B84AF2A9FAD880093C028 /* views */,
+				04FB64E22A9D212800D0E365 /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		04FB64A42A9B5B1800D0E365 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				043B84B42A9FAEA60093C028 /* insights */,
+				043B84A12A9E7A210093C028 /* base */,
+				04FB64A32A9B5B1200D0E365 /* home */,
+				04FB64A22A9B5B0100D0E365 /* login */,
+				04FB64A12A9B5AE000D0E365 /* profileSetUp */,
+				04FB64A02A9B5AC800D0E365 /* onboarding */,
+				04FB64762A9B580400D0E365 /* MuscleUPApp.swift */,
+				043B849D2A9E58A50093C028 /* Router.swift */,
+				04FB64782A9B580400D0E365 /* ContentView.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		04FB64A52A9B5B6C00D0E365 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64A72A9B5B9800D0E365 /* useCase */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		04FB64A62A9B5B7600D0E365 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64A82A9B5BAD00D0E365 /* repository */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		04FB64A72A9B5B9800D0E365 /* useCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = useCase;
+			sourceTree = "<group>";
+		};
+		04FB64A82A9B5BAD00D0E365 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		04FB64AB2A9B5CA100D0E365 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				043B84AE2A9FAD340093C028 /* views */,
+				04FB64AE2A9B70F300D0E365 /* font */,
+				04FB64C82A9B864B00D0E365 /* CustomColors.swift */,
+				04FB64CA2A9B8FF000D0E365 /* CustomButton.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		04FB64AE2A9B70F300D0E365 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64B62A9B711300D0E365 /* IntegralCF-Bold.otf */,
+				04FB64B72A9B711300D0E365 /* IntegralCF-BoldOblique.otf */,
+				04FB64B82A9B711300D0E365 /* IntegralCF-DemiBold.otf */,
+				04FB64BA2A9B711300D0E365 /* IntegralCF-DemiBoldOblique.otf */,
+				04FB64B42A9B711300D0E365 /* IntegralCF-ExtraBold.otf */,
+				04FB64B92A9B711300D0E365 /* IntegralCF-ExtraBoldOblique.otf */,
+				04FB64AF2A9B711200D0E365 /* IntegralCF-Heavy.otf */,
+				04FB64B02A9B711300D0E365 /* IntegralCF-HeavyOblique.otf */,
+				04FB64B12A9B711300D0E365 /* IntegralCF-Medium.otf */,
+				04FB64B22A9B711300D0E365 /* IntegralCF-MediumOblique.otf */,
+				04FB64B52A9B711300D0E365 /* IntegralCF-Regular.otf */,
+				04FB64B32A9B711300D0E365 /* IntegralCF-RegularOblique.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		04FB64CE2A9BE25300D0E365 /* genderSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64D82A9BF0C400D0E365 /* GenderSelectionView.swift */,
+			);
+			path = genderSelection;
+			sourceTree = "<group>";
+		};
+		04FB64CF2A9BE26F00D0E365 /* heigthSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64D42A9BE47D00D0E365 /* HeigthSelectionView.swift */,
+			);
+			path = heigthSelection;
+			sourceTree = "<group>";
+		};
+		04FB64D02A9BE28500D0E365 /* weigthSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64DA2A9BF7EE00D0E365 /* WeigthSelectionView.swift */,
+			);
+			path = weigthSelection;
+			sourceTree = "<group>";
+		};
+		04FB64D12A9BE29700D0E365 /* oldSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64D62A9BE48E00D0E365 /* OldSelectionView.swift */,
+			);
+			path = oldSelection;
+			sourceTree = "<group>";
+		};
+		04FB64D22A9BE2C900D0E365 /* goalSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64DC2A9CAC2C00D0E365 /* GoalSelectionView.swift */,
+			);
+			path = goalSelection;
+			sourceTree = "<group>";
+		};
+		04FB64D32A9BE2DB00D0E365 /* activitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				04FB64DD2A9CAC2E00D0E365 /* ActivitySelectionView.swift */,
+			);
+			path = activitySelection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FB64722A9B580400D0E365 /* MuscleUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FB64972A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUP" */;
+			buildPhases = (
+				04FB646F2A9B580400D0E365 /* Sources */,
+				04FB64702A9B580400D0E365 /* Frameworks */,
+				04FB64712A9B580400D0E365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuscleUP;
+			productName = muscleup;
+			productReference = 04FB64732A9B580400D0E365 /* MuscleUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FB64822A9B580600D0E365 /* MuscleUPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FB649A2A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUPTests" */;
+			buildPhases = (
+				04FB647F2A9B580600D0E365 /* Sources */,
+				04FB64802A9B580600D0E365 /* Frameworks */,
+				04FB64812A9B580600D0E365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FB64852A9B580600D0E365 /* PBXTargetDependency */,
+			);
+			name = MuscleUPTests;
+			productName = muscleupTests;
+			productReference = 04FB64832A9B580600D0E365 /* MuscleUPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FB648C2A9B580600D0E365 /* MuscleUPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FB649D2A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUPUITests" */;
+			buildPhases = (
+				04FB64892A9B580600D0E365 /* Sources */,
+				04FB648A2A9B580600D0E365 /* Frameworks */,
+				04FB648B2A9B580600D0E365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FB648F2A9B580600D0E365 /* PBXTargetDependency */,
+			);
+			name = MuscleUPUITests;
+			productName = muscleupUITests;
+			productReference = 04FB648D2A9B580600D0E365 /* MuscleUPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FB646B2A9B580400D0E365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					04FB64722A9B580400D0E365 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					04FB64822A9B580600D0E365 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 04FB64722A9B580400D0E365;
+					};
+					04FB648C2A9B580600D0E365 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 04FB64722A9B580400D0E365;
+					};
+				};
+			};
+			buildConfigurationList = 04FB646E2A9B580400D0E365 /* Build configuration list for PBXProject "MuscleUP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FB646A2A9B580400D0E365;
+			productRefGroup = 04FB64742A9B580400D0E365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FB64722A9B580400D0E365 /* MuscleUP */,
+				04FB64822A9B580600D0E365 /* MuscleUPTests */,
+				04FB648C2A9B580600D0E365 /* MuscleUPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FB64712A9B580400D0E365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FB64C02A9B711300D0E365 /* IntegralCF-ExtraBold.otf in Resources */,
+				04FB64BC2A9B711300D0E365 /* IntegralCF-HeavyOblique.otf in Resources */,
+				04FB64BD2A9B711300D0E365 /* IntegralCF-Medium.otf in Resources */,
+				04FB64C52A9B711300D0E365 /* IntegralCF-ExtraBoldOblique.otf in Resources */,
+				04FB64C22A9B711300D0E365 /* IntegralCF-Bold.otf in Resources */,
+				04FB64C12A9B711300D0E365 /* IntegralCF-Regular.otf in Resources */,
+				04FB64C32A9B711300D0E365 /* IntegralCF-BoldOblique.otf in Resources */,
+				04FB64BF2A9B711300D0E365 /* IntegralCF-RegularOblique.otf in Resources */,
+				04FB64C62A9B711300D0E365 /* IntegralCF-DemiBoldOblique.otf in Resources */,
+				04FB647E2A9B580600D0E365 /* Preview Assets.xcassets in Resources */,
+				04FB64BE2A9B711300D0E365 /* IntegralCF-MediumOblique.otf in Resources */,
+				04FB64BB2A9B711300D0E365 /* IntegralCF-Heavy.otf in Resources */,
+				04FB64C42A9B711300D0E365 /* IntegralCF-DemiBold.otf in Resources */,
+				04FB647B2A9B580600D0E365 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB64812A9B580600D0E365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB648B2A9B580600D0E365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FB646F2A9B580400D0E365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FB64AD2A9B5D0000D0E365 /* OnboardingModel.swift in Sources */,
+				04FB64C92A9B864B00D0E365 /* CustomColors.swift in Sources */,
+				04FB64CB2A9B8FF000D0E365 /* CustomButton.swift in Sources */,
+				04FB64E32A9D212800D0E365 /* HomeView.swift in Sources */,
+				043B849C2A9E24BA0093C028 /* ProfileSetUpViewModel.swift in Sources */,
+				043B84AB2A9F92D60093C028 /* HomeViewModel.swift in Sources */,
+				04FB64E12A9D161800D0E365 /* ProfileBaseView.swift in Sources */,
+				04FB64AA2A9B5C5700D0E365 /* OnboardingView.swift in Sources */,
+				04FB64DE2A9CAC8600D0E365 /* ActivitySelectionView.swift in Sources */,
+				04FB64DF2A9CAC8900D0E365 /* GoalSelectionView.swift in Sources */,
+				043B84A02A9E73460093C028 /* CustomTabBarView.swift in Sources */,
+				043B84A92A9F4F510093C028 /* CustomSegmentedControlView.swift in Sources */,
+				04FB64CD2A9B902900D0E365 /* ProfileSetUpView.swift in Sources */,
+				043B849E2A9E58A50093C028 /* Router.swift in Sources */,
+				04FB64792A9B580400D0E365 /* ContentView.swift in Sources */,
+				04FB64DB2A9BF7EE00D0E365 /* WeigthSelectionView.swift in Sources */,
+				043B84B62A9FAEC40093C028 /* InsigthsView.swift in Sources */,
+				043B84A52A9F2C2D0093C028 /* CardView.swift in Sources */,
+				04FB64D92A9BF0C400D0E365 /* GenderSelectionView.swift in Sources */,
+				04FB64D52A9BE47D00D0E365 /* HeigthSelectionView.swift in Sources */,
+				043B84AD2A9F93930093C028 /* Segment.swift in Sources */,
+				043B84A32A9E7A410093C028 /* BaseView.swift in Sources */,
+				04FB64772A9B580400D0E365 /* MuscleUPApp.swift in Sources */,
+				04FB64D72A9BE48E00D0E365 /* OldSelectionView.swift in Sources */,
+				043B84A72A9F2EA10093C028 /* SectionTitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB647F2A9B580600D0E365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FB64882A9B580600D0E365 /* MuscleUPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FB64892A9B580600D0E365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FB64942A9B580600D0E365 /* MuscleUPUITestsLaunchTests.swift in Sources */,
+				04FB64922A9B580600D0E365 /* MuscleUPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FB64852A9B580600D0E365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FB64722A9B580400D0E365 /* MuscleUP */;
+			targetProxy = 04FB64842A9B580600D0E365 /* PBXContainerItemProxy */;
+		};
+		04FB648F2A9B580600D0E365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FB64722A9B580400D0E365 /* MuscleUP */;
+			targetProxy = 04FB648E2A9B580600D0E365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04FB64952A9B580600D0E365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FB64962A9B580600D0E365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FB64982A9B580600D0E365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"muscleup/Preview Content\"";
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = muscleup/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.MuscleUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FB64992A9B580600D0E365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"muscleup/Preview Content\"";
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = muscleup/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.MuscleUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04FB649B2A9B580600D0E365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.muscleupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuscleUP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MuscleUP";
+			};
+			name = Debug;
+		};
+		04FB649C2A9B580600D0E365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.muscleupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuscleUP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MuscleUP";
+			};
+			name = Release;
+		};
+		04FB649E2A9B580600D0E365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.muscleupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = muscleup;
+			};
+			name = Debug;
+		};
+		04FB649F2A9B580600D0E365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZPCJZGT4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgadea.muscleupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = muscleup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FB646E2A9B580400D0E365 /* Build configuration list for PBXProject "MuscleUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FB64952A9B580600D0E365 /* Debug */,
+				04FB64962A9B580600D0E365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FB64972A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FB64982A9B580600D0E365 /* Debug */,
+				04FB64992A9B580600D0E365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FB649A2A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FB649B2A9B580600D0E365 /* Debug */,
+				04FB649C2A9B580600D0E365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FB649D2A9B580600D0E365 /* Build configuration list for PBXNativeTarget "MuscleUPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FB649E2A9B580600D0E365 /* Debug */,
+				04FB649F2A9B580600D0E365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FB646B2A9B580400D0E365 /* Project object */;
+}
