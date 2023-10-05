@@ -17,6 +17,11 @@
 		043B84AB2A9F92D60093C028 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84AA2A9F92D60093C028 /* HomeViewModel.swift */; };
 		043B84AD2A9F93930093C028 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84AC2A9F93930093C028 /* Segment.swift */; };
 		043B84B62A9FAEC40093C028 /* InsigthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B84B52A9FAEC40093C028 /* InsigthsView.swift */; };
+		048F2F822AC98B97007174A5 /* ExercisesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F2F812AC98B97007174A5 /* ExercisesUseCase.swift */; };
+		048F2F842AC98BA9007174A5 /* ExercisesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F2F832AC98BA9007174A5 /* ExercisesRepository.swift */; };
+		048F2F872AC98BEB007174A5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F2F862AC98BEB007174A5 /* LoginView.swift */; };
+		048F2F8B2AC98F77007174A5 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F2F8A2AC98F77007174A5 /* UseCaseProtocol.swift */; };
+		048F2F8D2AC98F98007174A5 /* ExercisesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F2F8C2AC98F98007174A5 /* ExercisesEntity.swift */; };
 		04FB64772A9B580400D0E365 /* MuscleUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64762A9B580400D0E365 /* MuscleUPApp.swift */; };
 		04FB64792A9B580400D0E365 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB64782A9B580400D0E365 /* ContentView.swift */; };
 		04FB647B2A9B580600D0E365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FB647A2A9B580600D0E365 /* Assets.xcassets */; };
@@ -79,6 +84,11 @@
 		043B84AA2A9F92D60093C028 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		043B84AC2A9F93930093C028 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		043B84B52A9FAEC40093C028 /* InsigthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsigthsView.swift; sourceTree = "<group>"; };
+		048F2F812AC98B97007174A5 /* ExercisesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesUseCase.swift; sourceTree = "<group>"; };
+		048F2F832AC98BA9007174A5 /* ExercisesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesRepository.swift; sourceTree = "<group>"; };
+		048F2F862AC98BEB007174A5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		048F2F8A2AC98F77007174A5 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		048F2F8C2AC98F98007174A5 /* ExercisesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesEntity.swift; sourceTree = "<group>"; };
 		04FB64732A9B580400D0E365 /* MuscleUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB64762A9B580400D0E365 /* MuscleUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleUPApp.swift; sourceTree = "<group>"; };
 		04FB64782A9B580400D0E365 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +225,64 @@
 			path = insights;
 			sourceTree = "<group>";
 		};
+		048F2F7D2AC98B80007174A5 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F7E2AC98B80007174A5 /* repository */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		048F2F7E2AC98B80007174A5 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F832AC98BA9007174A5 /* ExercisesRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		048F2F7F2AC98B80007174A5 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F892AC98F42007174A5 /* interface */,
+				048F2F882AC98C4B007174A5 /* entity */,
+				048F2F802AC98B80007174A5 /* useCase */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		048F2F802AC98B80007174A5 /* useCase */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F812AC98B97007174A5 /* ExercisesUseCase.swift */,
+			);
+			path = useCase;
+			sourceTree = "<group>";
+		};
+		048F2F852AC98BD7007174A5 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F862AC98BEB007174A5 /* LoginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		048F2F882AC98C4B007174A5 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F8C2AC98F98007174A5 /* ExercisesEntity.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		048F2F892AC98F42007174A5 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				048F2F8A2AC98F77007174A5 /* UseCaseProtocol.swift */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
 		04FB646A2A9B580400D0E365 = {
 			isa = PBXGroup;
 			children = (
@@ -239,9 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				04FB64C72A9B716C00D0E365 /* Info.plist */,
+				048F2F7D2AC98B80007174A5 /* data */,
+				048F2F7F2AC98B80007174A5 /* domain */,
 				04FB64AB2A9B5CA100D0E365 /* common */,
-				04FB64A62A9B5B7600D0E365 /* data */,
-				04FB64A52A9B5B6C00D0E365 /* domain */,
 				04FB64A42A9B5B1800D0E365 /* presentation */,
 				04FB647A2A9B580600D0E365 /* Assets.xcassets */,
 				04FB647C2A9B580600D0E365 /* Preview Content */,
@@ -293,13 +361,6 @@
 			path = profileSetUp;
 			sourceTree = "<group>";
 		};
-		04FB64A22A9B5B0100D0E365 /* login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
 		04FB64A32A9B5B1200D0E365 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,10 +374,10 @@
 		04FB64A42A9B5B1800D0E365 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				048F2F852AC98BD7007174A5 /* login */,
 				043B84B42A9FAEA60093C028 /* insights */,
 				043B84A12A9E7A210093C028 /* base */,
 				04FB64A32A9B5B1200D0E365 /* home */,
-				04FB64A22A9B5B0100D0E365 /* login */,
 				04FB64A12A9B5AE000D0E365 /* profileSetUp */,
 				04FB64A02A9B5AC800D0E365 /* onboarding */,
 				04FB64762A9B580400D0E365 /* MuscleUPApp.swift */,
@@ -324,36 +385,6 @@
 				04FB64782A9B580400D0E365 /* ContentView.swift */,
 			);
 			path = presentation;
-			sourceTree = "<group>";
-		};
-		04FB64A52A9B5B6C00D0E365 /* domain */ = {
-			isa = PBXGroup;
-			children = (
-				04FB64A72A9B5B9800D0E365 /* useCase */,
-			);
-			path = domain;
-			sourceTree = "<group>";
-		};
-		04FB64A62A9B5B7600D0E365 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				04FB64A82A9B5BAD00D0E365 /* repository */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		04FB64A72A9B5B9800D0E365 /* useCase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = useCase;
-			sourceTree = "<group>";
-		};
-		04FB64A82A9B5BAD00D0E365 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = repository;
 			sourceTree = "<group>";
 		};
 		04FB64AB2A9B5CA100D0E365 /* common */ = {
@@ -579,13 +610,16 @@
 				04FB64AD2A9B5D0000D0E365 /* OnboardingModel.swift in Sources */,
 				04FB64C92A9B864B00D0E365 /* CustomColors.swift in Sources */,
 				04FB64CB2A9B8FF000D0E365 /* CustomButton.swift in Sources */,
+				048F2F822AC98B97007174A5 /* ExercisesUseCase.swift in Sources */,
 				04FB64E32A9D212800D0E365 /* HomeView.swift in Sources */,
 				043B849C2A9E24BA0093C028 /* ProfileSetUpViewModel.swift in Sources */,
 				043B84AB2A9F92D60093C028 /* HomeViewModel.swift in Sources */,
 				04FB64E12A9D161800D0E365 /* ProfileBaseView.swift in Sources */,
 				04FB64AA2A9B5C5700D0E365 /* OnboardingView.swift in Sources */,
+				048F2F8B2AC98F77007174A5 /* UseCaseProtocol.swift in Sources */,
 				04FB64DE2A9CAC8600D0E365 /* ActivitySelectionView.swift in Sources */,
 				04FB64DF2A9CAC8900D0E365 /* GoalSelectionView.swift in Sources */,
+				048F2F8D2AC98F98007174A5 /* ExercisesEntity.swift in Sources */,
 				043B84A02A9E73460093C028 /* CustomTabBarView.swift in Sources */,
 				043B84A92A9F4F510093C028 /* CustomSegmentedControlView.swift in Sources */,
 				04FB64CD2A9B902900D0E365 /* ProfileSetUpView.swift in Sources */,
@@ -597,10 +631,12 @@
 				04FB64D92A9BF0C400D0E365 /* GenderSelectionView.swift in Sources */,
 				04FB64D52A9BE47D00D0E365 /* HeigthSelectionView.swift in Sources */,
 				043B84AD2A9F93930093C028 /* Segment.swift in Sources */,
+				048F2F872AC98BEB007174A5 /* LoginView.swift in Sources */,
 				043B84A32A9E7A410093C028 /* BaseView.swift in Sources */,
 				04FB64772A9B580400D0E365 /* MuscleUPApp.swift in Sources */,
 				04FB64D72A9BE48E00D0E365 /* OldSelectionView.swift in Sources */,
 				043B84A72A9F2EA10093C028 /* SectionTitleView.swift in Sources */,
+				048F2F842AC98BA9007174A5 /* ExercisesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
